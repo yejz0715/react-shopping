@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-function Title() {
+function Title(props) {
   return (
     <div>
-      <div id="title_box">title</div>
+      <h3 id="title_text">{props.text}</h3>
     </div>
   );
 }

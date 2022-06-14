@@ -10,7 +10,7 @@ function Main() {
       <body>
         <div class="container">
           <div id="bar">1</div>
-          <Title />
+          <Title text="SHOPPING LIST" />
           <InfoBox />
           <CheckBox />
           <Button />
