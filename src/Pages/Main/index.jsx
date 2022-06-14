@@ -11,7 +11,7 @@ function Main() {
         <div class="container">
           <div id="bar">1</div>
           <Title text="SHOPPING LIST" />
-          <InfoBox />
+          <InfoBox text="구매하실 상품을 선택해 주세요!" />
           <CheckBox />
           <Button />
         </div>
