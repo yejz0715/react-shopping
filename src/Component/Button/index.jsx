@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-function Button() {
+function Button(props) {
   return (
     <div>
-      <button>주문하기</button>
+      <button>{props.text}</button>
     </div>
   );
 }
