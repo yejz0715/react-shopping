@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import infoIcon from "../../../public/img/infoBox_icon.svg";
+import infoIcon from "../../img/infoBox_icon.svg";
 function InfoBox(props) {
   return (
     <div>
