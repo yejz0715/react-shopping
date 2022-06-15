@@ -1,17 +1,19 @@
 import React from "react";
 import "./style.css";
+import infoIcon from "../../../public/img/infoBox_icon.svg";
 function InfoBox(props) {
   return (
     <div>
       <div id="info_box">
-        <label>
-          <img
-            src="assets/img/infoBox_icon.svg"
-            alt="icon"
-            style={{ width: "24px", height: "24px", margin: "17px" }}
-          />
-        </label>
-        <span id="info_text">{props.text}</span>
+        <img
+          src={infoIcon}
+          alt="icon"
+          width="24px"
+          height="24px"
+          style={{ margin: "17px" }}
+        />
+
+        <label id="info_text">{props.text}</label>
       </div>
     </div>
   );
