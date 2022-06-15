@@ -2,7 +2,7 @@ import React from "react";
 import Main from "./Pages/Main";
 function App() {
   return (
-    <div>
+    <div id="main_container">
       <Main />
     </div>
   );

@@ -7,15 +7,13 @@ import "./style.css";
 function Main() {
   return (
     <div>
-      <body>
-        <div class="container">
-          <div id="bar"></div>
-          <Title text="SHOPPING LIST" />
-          <InfoBox text="구매하실 상품을 선택해 주세요!" />
-          <CheckBox />
-          <Button text="주문하기" />
-        </div>
-      </body>
+      <div class="container">
+        <div id="bar"></div>
+        <Title text="SHOPPING LIST" />
+        <InfoBox text="구매하실 상품을 선택해 주세요!" />
+        <CheckBox />
+        <Button text="주문하기" />
+      </div>
     </div>
   );
 }
