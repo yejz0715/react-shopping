@@ -1,9 +1,10 @@
 import React from "react";
 import "./style.css";
-function CheckBox() {
+function CheckBox(props) {
   return (
     <div>
-      <div id="check_box">check</div>
+      <input type="checkbox" id="name" />
+      <label htmlFor="name">{props.name}</label>
     </div>
   );
 }
