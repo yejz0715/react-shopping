@@ -1,9 +1,12 @@
 import React from "react";
 import "./style.css";
 function Button(props) {
+  function buttonOnClick() {
+    document.location.href("../../Pages/Order");
+  }
   return (
     <div>
-      <button>{props.text}</button>
+      <button onClick={buttonOnClick}>{props.text}</button>
     </div>
   );
 }
