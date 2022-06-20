@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 function Button(props) {
   function buttonOnClick() {
-    document.location.href("../../Pages/Order");
+    console.log("hi");
   }
   return (
     <div>
