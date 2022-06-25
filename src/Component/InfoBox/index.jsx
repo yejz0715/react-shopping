@@ -5,13 +5,7 @@ function InfoBox(props) {
   return (
     <div>
       <div id="info_box">
-        <img
-          src={infoIcon}
-          alt="icon"
-          width="24px"
-          height="24px"
-          style={{ margin: "17px" }}
-        />
+        <img id="info_img" src={infoIcon} alt="icon" />
 
         <label id="info_text">{props.text}</label>
       </div>
