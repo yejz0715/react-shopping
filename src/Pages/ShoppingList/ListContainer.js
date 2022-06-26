@@ -1,9 +1,7 @@
 import React from "react";
-import Button from "../../Component/Button";
-import CheckBox from "../../Component/CheckBox";
-import InfoBox from "../../Component/InfoBox";
-import Title from "../../Component/Title";
+import ListPresenter from "./ListPresenter";
 import "./style.css";
+
 import strawberry from "../../img/img_strawberry.png";
 import melon from "../../img/img_melon.png";
 import orange from "../../img/img_orange.png";
@@ -16,8 +14,7 @@ import cherry from "../../img/img_cherry.png";
 import peach from "../../img/img_peach.png";
 import pineapple from "../../img/img_pineapple.png";
 import pear from "../../img/img_pear.png";
-import SelectBox from "../../Component/SelectBox";
-function Main() {
+function ListContainer() {
   const list = [
     { id: 1, name: "딸기", price: 7000, img: strawberry },
     { id: 2, name: "멜론", price: 13000, img: melon },
@@ -32,20 +29,6 @@ function Main() {
     { id: 11, name: "파인애플", price: 9500, img: pineapple },
     { id: 12, name: "배", price: 8000, img: pear },
   ];
-
-  return (
-    <div class="container">
-      <div id="bar"></div>
-      <Title text="SHOPPING LIST" />
-      <InfoBox text="구매하실 상품을 선택해 주세요!" />
-      <div id="check_box">
-        {list.map((item) => (
-          <CheckBox name={item.name} price={item.price} img={item.img} />
-        ))}
-      </div>
-      <Button text="주문하기" />
-      <SelectBox />
-    </div>
-  );
+  return <ListPresenter list={list} />;
 }
-export default Main;
+export default ListContainer;
