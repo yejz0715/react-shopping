@@ -40,11 +40,11 @@ function Main() {
       <InfoBox text="구매하실 상품을 선택해 주세요!" />
       <div id="check_box">
         {list.map((item) => (
-          <CheckBox>{(item.name, item.price, item.img)}</CheckBox>
+          <CheckBox name={item.name} price={item.price} img={item.img} />
         ))}
       </div>
       <Button text="주문하기" />
-      <SelectBox text="배송메시지" />
+      <SelectBox />
     </div>
   );
 }
