@@ -1,11 +1,7 @@
 import React from "react";
-import ListContainer from "./Pages/ShoppingList";
+import ListContainer from "./Pages/ListPage";
 function App() {
-  return (
-    <div id="main_container">
-      <ListContainer />
-    </div>
-  );
+  return <ListContainer />;
 }
 
 export default App;
