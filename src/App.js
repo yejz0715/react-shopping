@@ -1,7 +1,8 @@
 import React from "react";
-import ListContainer from "./Pages/ListPage";
+import AppRouter from "./AppRouter";
+import "./app.css";
 function App() {
-  return <ListContainer />;
+  return <AppRouter />;
 }
 
 export default App;
