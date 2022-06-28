@@ -7,9 +7,9 @@ function InfoBox({ textList }) {
       <img src={infoIcon} alt="icon" id="info_img" />
       <div id="textList">
         {textList.map((item, index) => (
-          <p id="info_text" key={index}>
+          <label id="info_text" key={index}>
             {item}
-          </p>
+          </label>
         ))}
       </div>
     </div>
