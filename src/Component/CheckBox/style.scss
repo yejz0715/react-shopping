@@ -1,0 +1,56 @@
+#check_container {
+  width: 196px;
+  height: 256px;
+  border-radius: 8px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#check_back {
+  position: relative;
+  width: 196px;
+  height: 256px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    .checkbox_text {
+      visibility: visible;
+    }
+  }
+  &.isChecked {
+    background-color: rgba(0, 0, 0, 0.5);
+    .checkbox_text {
+      visibility: visible;
+    }
+  }
+}
+.checkbox_text {
+  position: absolute;
+  right: 16px;
+  color: #ffffff;
+  visibility: hidden;
+
+  &.top {
+    top: 16px;
+    font-size: 36px;
+    font-family: "GimpoGothicBold00";
+  }
+  &.bottom {
+    bottom: 16px;
+    font-size: 22px;
+    font-family: "GimpoGothicBold00";
+  }
+}
+.check_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  &.isChecked {
+    opacity: 1;
+  }
+}
