@@ -1,5 +1,5 @@
 import "./style.scss";
-import icon from "../../img/check_icon.svg";
+//import icon from "../../img/check_icon.svg";
 import classNames from "classnames";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -23,7 +23,7 @@ function CheckBox({ name, price, img, checkList, setCheckList }) {
         <label className={classNames("checkbox_text", "top")}>{name}</label>
         <img
           className={classNames("check_icon", { isChecked })}
-          src={icon}
+          src={"/assets/check_icon.svg"}
           alt="friut"
         />
         <label className={classNames("checkbox_text", "bottom")}>
