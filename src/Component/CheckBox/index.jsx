@@ -1,5 +1,4 @@
 import "./style.scss";
-//import icon from "../../img/check_icon.svg";
 import classNames from "classnames";
 import { useState } from "react";
 import { useEffect } from "react";
