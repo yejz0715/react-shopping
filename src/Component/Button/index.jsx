@@ -1,13 +1,9 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 function Button(props) {
   function buttonOnClick() {
     console.log("hi");
   }
-  return (
-    <div>
-      <button onClick={buttonOnClick}>{props.text}</button>
-    </div>
-  );
+  return <button onClick={buttonOnClick}>{props.text}</button>;
 }
 export default Button;
