@@ -1,5 +1,20 @@
+@font-face {
+  font-family: "GimpoGothicBold00";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicBold00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GimpoGothicRegular00";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding: 32px 130px;
   background-color: #ffffff;
   color: #242426;
+  font-family: "GimpoGothicRegular00";
 }

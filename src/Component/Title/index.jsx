@@ -1,10 +1,6 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 function Title(props) {
-  return (
-    <div>
-      <h3 id="title_text">{props.text}</h3>
-    </div>
-  );
+  return <h3 id="title_text">{props.text}</h3>;
 }
 export default Title;
