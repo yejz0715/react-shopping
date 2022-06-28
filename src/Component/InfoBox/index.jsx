@@ -1,13 +1,16 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 import infoIcon from "../../img/infoBox_icon.svg";
-function InfoBox(props) {
+function InfoBox({ textList }) {
   return (
-    <div>
-      <div id="info_box">
-        <img id="info_img" src={infoIcon} alt="icon" />
-
-        <label id="info_text">{props.text}</label>
+    <div id="info_box">
+      <img src={infoIcon} alt="icon" id="info_img" />
+      <div id="textList">
+        {textList.map((item, index) => (
+          <p id="info_text" key={index}>
+            {item}
+          </p>
+        ))}
       </div>
     </div>
   );
