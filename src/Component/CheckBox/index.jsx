@@ -2,12 +2,17 @@ import "./style.scss";
 import icon from "../../img/check_icon.svg";
 import classNames from "classnames";
 import { useState } from "react";
-function CheckBox({ name, price, img }) {
+import { useEffect } from "react";
+function CheckBox({ name, price, img, checkList, setCheckList }) {
   const [isChecked, setCheck] = useState(false);
-
   const checked = () => {
     setCheck((prev) => !prev);
   };
+  useEffect(() => {
+    isChecked
+      ? setCheckList([...checkList, name])
+      : setCheckList(checkList.filter((item) => item !== name));
+  }, [isChecked]);
   return (
     <div id="check_container" style={{ backgroundImage: `url(${img})` }}>
       <div

@@ -4,18 +4,23 @@ import Title from "../../Component/Title";
 import InfoBox from "../../Component/InfoBox";
 import Button from "../../Component/Button";
 import { Link } from "react-router-dom";
-const ListPresenter = ({ friutList }) => {
+import CheckBox from "../../Component/CheckBox";
+const ListPresenter = ({ friutList, checkList, setCheckList }) => {
   return (
-    <div id="main_container">
-      <Title text="SHOPPING List" />
+    <div id="list_container">
+      <div id="bar"></div>
+      <Title text="SHOPPING LIST" />
       <InfoBox textList={["구매하실 상품을 선택하주세요"]} />
       <div id="checkbox_list">
         {friutList.map((item) => (
-          <div key={item.id}>
-            <label>{item.name}</label>
-            <img src={item.img} alt="friut" width="196px" />
-            <label>{item.price}</label>
-          </div>
+          <CheckBox
+            key={item.id}
+            name={item.name}
+            price={item.price}
+            img={item.img}
+            checkList={checkList}
+            setCheckList={setCheckList}
+          />
         ))}
       </div>
       <Link to="/order">
