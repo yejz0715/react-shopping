@@ -1,9 +1,6 @@
 import React from "react";
 import "./style.scss";
-function Button(props) {
-  function buttonOnClick() {
-    console.log("hi");
-  }
-  return <button onClick={buttonOnClick}>{props.text}</button>;
+function Button({ handleOnClick, text }) {
+  return <button onClick={handleOnClick}>{text}</button>;
 }
 export default Button;

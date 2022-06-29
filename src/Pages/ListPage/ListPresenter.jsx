@@ -5,7 +5,12 @@ import InfoBox from "../../Component/InfoBox";
 import Button from "../../Component/Button";
 import { Link } from "react-router-dom";
 import CheckBox from "../../Component/CheckBox";
-const ListPresenter = ({ friutList, checkList, setCheckList }) => {
+const ListPresenter = ({
+  friutList,
+  checkList,
+  setCheckList,
+  handleCalcFruit,
+}) => {
   return (
     <div id="list_container">
       <div id="bar"></div>
@@ -24,7 +29,7 @@ const ListPresenter = ({ friutList, checkList, setCheckList }) => {
         ))}
       </div>
       <Link to="/order">
-        <Button text="구매하기" />
+        <Button text="구매하기" handleOnClick={handleCalcFruit} />
       </Link>
     </div>
   );
