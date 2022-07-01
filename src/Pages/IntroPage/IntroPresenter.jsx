@@ -2,7 +2,6 @@ import React from "react";
 import "./style.scss";
 import { Link } from "react-router-dom";
 import Button from "../../Component/Button";
-import SelectBox from "../../Component/SelectBox";
 
 const IntroPresenter = () => (
   <div id="intro_container">
@@ -13,11 +12,7 @@ const IntroPresenter = () => (
       </span>
       {/* 이모지 넣을 떄:<span sria-label="" role=""></span> */}
     </p>
-    <SelectBox />
-    <br />
-    <br />
-    <br />
-    <br />
+
     <Link to="/list">
       <Button text="쇼핑하기" />
     </Link>
