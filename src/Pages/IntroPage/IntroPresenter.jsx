@@ -6,7 +6,7 @@ import SelectBox from "../../Component/SelectBox";
 
 const IntroPresenter = () => (
   <div id="intro_container">
-    <p id="title_text">
+    <p id="intro_title">
       싱싱한 과일가게
       <span aria-label="사과" role="img">
         🍎
@@ -14,6 +14,10 @@ const IntroPresenter = () => (
       {/* 이모지 넣을 떄:<span sria-label="" role=""></span> */}
     </p>
     <SelectBox />
+    <br />
+    <br />
+    <br />
+    <br />
     <Link to="/list">
       <Button text="쇼핑하기" />
     </Link>
