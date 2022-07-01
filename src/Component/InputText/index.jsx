@@ -3,7 +3,7 @@ import "./style.scss";
 function InputText({ title }) {
   return (
     <div>
-      <p id="subTilte">{title}</p>
+      <p id="sub_tilte">{title}</p>
       <div id="text_box"></div>
     </div>
   );
