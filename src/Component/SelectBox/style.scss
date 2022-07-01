@@ -1,0 +1,27 @@
+$border-color: #e2e4e5;
+#select_sub_title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #242426;
+  margin: 0px 32px 15px 32px;
+  font-family: "GimpoGothicBold00";
+}
+#select_list {
+  border-bottom: 1px solid $border-color;
+  margin: 0px 32px 32px 32px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-left: 13px;
+}
+#option_title {
+  width: 100%;
+}
+#option_list {
+  overflow: hidden;
+  width: 300px;
+  border-radius: 0 0 10px 10px;
+}
+#option_text {
+  padding-top: 8px;
+}

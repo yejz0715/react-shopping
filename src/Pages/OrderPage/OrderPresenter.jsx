@@ -17,8 +17,7 @@ const OrderPresenter = () => (
       <InputText title="이름" />
       <InputText title="전화번호" />
       <InputText title="주소" />
-      <InputText title="배송 메세지 " />
-      <SelectBox />
+      <SelectBox title="배송 메세지" />
     </div>
     <div id="shopping_list">
       <SubTitle
