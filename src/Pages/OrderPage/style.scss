@@ -3,26 +3,16 @@
   flex-direction: column;
   width: 100%;
 }
-#profile_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: 783px;
-  margin-bottom: 45px;
-}
+
 #profile_box {
   width: 100%;
-  height: 526px;
   border: 1px solid #e2e4e5;
   border-radius: 8px;
 }
 #shopping_list {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 225px;
   border: 1px solid #e2e4e5;
   border-radius: 8px;
+  margin-bottom: 45px;
+  margin-top: 40px;
 }
