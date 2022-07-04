@@ -10,7 +10,7 @@ const IntroPresenter = () => (
       <span aria-label="사과" role="img">
         🍎
       </span>
-      {/* 이모지 넣을 떄:<span sria-label="" role=""></span> */}
+      {/* 이모지 넣을 때:<span aria-label="" role=""></span> */}
     </p>
 
     <Link to="/list">
