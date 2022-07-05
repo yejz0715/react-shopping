@@ -10,7 +10,7 @@ import SelectBox from "../../Component/SelectBox";
 const OrderPresenter = ({
   user,
   hanldeOnChangeInput,
-  handleUser,
+  handleSetUser,
   pathName,
   handleOpenPopup,
 }) => (
@@ -49,12 +49,10 @@ const OrderPresenter = ({
       </div>
     ) : null}
 
-    <Link to={pathName === "/order" ? "/payment" : "#"}>
-      <Button
-        text={pathName === "/order" ? "결제하기" : "주문내역확인"}
-        handleOnClick={pathName === "/order" ? handleUser : handleOpenPopup}
-      />
-    </Link>
+    <Button
+      text={pathName === "/order" ? "결제하기" : "주문내역확인"}
+      handleOnClick={pathName === "/order" ? handleSetUser : handleOpenPopup}
+    />
   </div>
 );
 export default OrderPresenter;
