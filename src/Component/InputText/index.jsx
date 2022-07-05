@@ -1,27 +1,26 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./style.scss";
-function InputText(props) {
-  const location = useLocation(); //1 readOnly 사용해서 true-order페이지 false-payment 페이지 보이게
-  const [inputText, setInputText] = useState("");
+function InputText({ value, name, title, hanldeOnChangeInput }) {
+  const location = useLocation();
   const [readOnly, setReadOnly] = useState(false);
-  location.pathname === "/order" ? console.log("a") : console.log("b");
-  const handleOnChangeText = (e) => {
-    setInputText(e.target.value);
-    console.log(inputText);
-  };
 
-  //2 order에 입력값 저장해서 payment에  보여지게
+  useEffect(() => {
+    location.pathname === "/order" ? setReadOnly(false) : setReadOnly(true);
+  }, [location.pathname]);
+
   return (
     <div>
-      <p id="sub_tilte">{props.title}</p>
+      <p id="sub_tilte">{title}</p>
       <div id="text_box">
         <input
+          name={name}
           type="text"
-          value={inputText}
+          value={value}
           id="input_text"
-          onChange={handleOnChangeText}
+          onChange={hanldeOnChangeInput}
           readOnly={readOnly}
         />
       </div>
