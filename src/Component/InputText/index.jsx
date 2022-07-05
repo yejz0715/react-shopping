@@ -22,6 +22,8 @@ function InputText({ value, name, title, hanldeOnChangeInput }) {
           id="input_text"
           onChange={hanldeOnChangeInput}
           readOnly={readOnly}
+          autoComplete="off"
+          required
         />
       </div>
     </div>
