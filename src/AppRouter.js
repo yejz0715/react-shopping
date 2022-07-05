@@ -10,7 +10,7 @@ function AppRouter() {
         <Route path="/" element={<IntroContainer />} />
         <Route path="/list" element={<ListContainer />} />
         <Route path="/order" element={<OrderContainer />} />
-        <Route path="/payment" element={<PaymentContainer />} />
+        <Route path="/payment" element={<OrderContainer />} />
       </Routes>
     </Router>
   );
