@@ -4,13 +4,13 @@ import { useLocation } from "react-router-dom";
 import "./style.scss";
 function InputText(props) {
   const location = useLocation(); //1 readOnly 사용해서 true-order페이지 false-payment 페이지 보이게
-  //const [isSow, setShow] = useState("");
+  const [inputText, setInputText] = useState("");
   const [readOnly, setReadOnly] = useState(false);
   location.pathname === "/order" ? console.log("a") : console.log("b");
-  // const handleText = (e) => {
-  //   if (isSow !== 0) setShow(e.target.value);
-  //   console.log(isSow);
-  // };
+  const handleOnChangeText = (e) => {
+    setInputText(e.target.value);
+    console.log(inputText);
+  };
 
   //2 order에 입력값 저장해서 payment에  보여지게
   return (
@@ -19,9 +19,9 @@ function InputText(props) {
       <div id="text_box">
         <input
           type="text"
-          value={props.isSow}
+          value={inputText}
           id="input_text"
-          onChange={props.handleText}
+          onChange={handleOnChangeText}
           readOnly={readOnly}
         />
       </div>
