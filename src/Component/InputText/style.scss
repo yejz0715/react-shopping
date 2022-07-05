@@ -15,3 +15,10 @@ $border-color: #e2e4e5;
   line-height: 28px;
   padding-left: 13px;
 }
+#input_text {
+  width: 100%;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
