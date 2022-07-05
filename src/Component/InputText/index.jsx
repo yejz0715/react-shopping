@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./style.scss";
-function InputText({ value, name, title, hanldeOnChangeInput }) {
+function InputText({ value, name, title, handleOnChangeInput }) {
   const location = useLocation();
   const [readOnly, setReadOnly] = useState(false);
 
@@ -13,14 +13,14 @@ function InputText({ value, name, title, hanldeOnChangeInput }) {
 
   return (
     <div>
-      <p id="sub_tilte">{title}</p>
+      <p id="sub_title">{title}</p>
       <div id="text_box">
         <input
           name={name}
           type="text"
           value={value}
           id="input_text"
-          onChange={hanldeOnChangeInput}
+          onChange={handleOnChangeInput}
           readOnly={readOnly}
           autoComplete="off"
           required

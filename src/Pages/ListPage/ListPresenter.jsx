@@ -6,7 +6,7 @@ import Button from "../../Component/Button";
 import { Link } from "react-router-dom";
 import CheckBox from "../../Component/CheckBox";
 const ListPresenter = ({
-  friutList,
+  fruitList,
   checkList,
   setCheckList,
   handleCalcFruit,
@@ -17,7 +17,7 @@ const ListPresenter = ({
       <Title text="SHOPPING LIST" />
       <InfoBox textList={["구매하실 상품을 선택하주세요"]} />
       <div id="checkbox_list">
-        {friutList.map((item) => (
+        {fruitList.map((item) => (
           <CheckBox
             key={item.id}
             name={item.name}

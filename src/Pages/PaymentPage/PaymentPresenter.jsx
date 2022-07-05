@@ -6,7 +6,7 @@ import Button from "../../Component/Button";
 import SubTitle from "../../Component/SubTitle";
 import InputText from "../../Component/InputText";
 import SelectBox from "../../Component/SelectBox";
-const PaymentPresenter = ({ testFunc, textList }) => (
+const PaymentPresenter = ({ textList }) => (
   <div id="payment_container">
     <div id="bar"></div>
     <Title text="결제 내역" />
@@ -18,7 +18,7 @@ const PaymentPresenter = ({ testFunc, textList }) => (
       <InputText title="주소" />
       <SelectBox title="배송 메세지" />
     </div>
-    <Button text="주문내역 확인" handleOnClick={testFunc} />
+    <Button text="주문내역 확인" />
   </div>
 );
 

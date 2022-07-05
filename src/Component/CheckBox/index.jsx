@@ -25,7 +25,7 @@ function CheckBox({ name, price, img, checkList, setCheckList }) {
         <img
           className={classNames("check_icon", { isChecked })}
           src={"/assets/check_icon.svg"}
-          alt="friut"
+          alt="fruit"
         />
         <label className={classNames("checkbox_text", "bottom")}>
           {price}원

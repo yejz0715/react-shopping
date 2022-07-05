@@ -1,4 +1,4 @@
-export const friutList = [
+export const fruitList = [
   {
     id: 1,
     name: "딸기",

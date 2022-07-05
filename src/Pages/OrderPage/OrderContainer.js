@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import OrderPresenter from "./OrderPresenter";
+import Swal from "sweetalert2";
 
-const OrderContainer = ({}) => {
+const OrderContainer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const pathName = location.pathname;
@@ -15,7 +16,7 @@ const OrderContainer = ({}) => {
     phoneNum: "",
     address: "",
   });
-  const hanldeOnChangeInput = (e) => {
+  const handleOnChangeInput = (e) => {
     const { name, value } = e.target;
     const updatedUser = {
       ...user,
@@ -38,7 +39,8 @@ const OrderContainer = ({}) => {
   };
 
   const handleOpenPopup = () => {
-    console.log("주문내역 확인");
+    //주문내역 창
+    Swal.fire("주문내역 확인");
   };
   const validateUserName = (name) => {
     const korean = /^[가-힣]{2,4}$/;
@@ -55,7 +57,7 @@ const OrderContainer = ({}) => {
     return false;
   };
   const validateUserAddress = (address) => {
-    if (address.length != 0) {
+    if (address.length !== 0) {
       return true;
     }
     return false;
@@ -64,7 +66,7 @@ const OrderContainer = ({}) => {
   return (
     <OrderPresenter
       user={user}
-      hanldeOnChangeInput={hanldeOnChangeInput}
+      handleOnChangeInput={handleOnChangeInput}
       handleSetUser={handleSetUser}
       pathName={pathName}
       handleOpenPopup={handleOpenPopup}

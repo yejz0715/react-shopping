@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.scss";
-import { Link } from "react-router-dom";
 import Button from "../../Component/Button";
 import Title from "../../Component/Title";
 import InfoBox from "../../Component/InfoBox";
@@ -9,7 +8,7 @@ import InputText from "../../Component/InputText";
 import SelectBox from "../../Component/SelectBox";
 const OrderPresenter = ({
   user,
-  hanldeOnChangeInput,
+  handleOnChangeInput,
   handleSetUser,
   pathName,
   handleOpenPopup,
@@ -24,19 +23,19 @@ const OrderPresenter = ({
         title="이름"
         name="name"
         value={user.name}
-        hanldeOnChangeInput={hanldeOnChangeInput}
+        handleOnChangeInput={handleOnChangeInput}
       />
       <InputText
         title="전화번호"
         name="phoneNum"
         value={user.phonNum}
-        hanldeOnChangeInput={hanldeOnChangeInput}
+        handleOnChangeInput={handleOnChangeInput}
       />
       <InputText
         title="주소"
         name="address"
         value={user.address}
-        hanldeOnChangeInput={hanldeOnChangeInput}
+        handleOnChangeInput={handleOnChangeInput}
       />
       {pathName === "/payment" ? <SelectBox title="배송 메세지" /> : null}
     </div>
