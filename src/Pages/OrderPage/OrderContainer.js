@@ -34,13 +34,17 @@ const OrderContainer = () => {
     ) {
       navigate("/payment");
     } else {
-      alert("모두 입력해주세요");
+      Swal.fire({
+        icon: "error",
+        title: "입력창을 확인해주세요.",
+        text: "회원정보를 모두 입력해주세요!",
+      });
     }
   };
 
   const handleOpenPopup = () => {
     //주문내역 창
-    Swal.fire("주문내역 확인");
+    Swal.fire({ title: "주문내역 확인" });
   };
   const validateUserName = (name) => {
     const korean = /^[가-힣]{2,4}$/;
