@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import AppRouter from "./AppRouter";
-//import IntroContainer from "./Pages/Intro";
 function App() {
-  //  const [code,setCode]=useState('')
+  const [code, setCode] = useState("");
   //1 여기서 만든 상태변수를 ->props로 intro로 넘겨줌
   //2 intro-container 에서
   //버튼을 눌렀을때 setCoted에(random코드 생성)
@@ -14,10 +13,7 @@ function App() {
   //else intro만 보이게
   //const [code, setCode] = useState("");
 
-  return (
-    //  <IntroContainer code={code} setCode={setCode} />
-    <AppRouter />
-  );
+  return <AppRouter code={code} setCode={setCode} />;
 }
 
 export default App;
