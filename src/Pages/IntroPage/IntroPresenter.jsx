@@ -3,7 +3,7 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 import Button from "../../Component/Button";
 
-const IntroPresenter = () => (
+const IntroPresenter = ({ onClickRandomCode }) => (
   <div id="intro_container">
     <p id="intro_title">
       싱싱한 과일가게
@@ -14,7 +14,7 @@ const IntroPresenter = () => (
     </p>
 
     <Link to="/list">
-      <Button text="쇼핑하기" />
+      <Button text="쇼핑하기" handleOnClick={onClickRandomCode} />
     </Link>
   </div>
 );
