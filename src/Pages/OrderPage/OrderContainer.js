@@ -12,12 +12,14 @@ const OrderContainer = () => {
   }, [pathName]);
 
   const [user, setUser] = useState({
+    //사용자 정보
     name: "",
     phoneNum: "",
     address: "",
   });
   const handleOnChangeInput = (e) => {
-    const { name, value } = e.target;
+    //onChange함수로 기존 정보는 그대로+ 새로 입력한 건 추가로 저장해줌
+    const { name, value } = e.target; //구조분해
     const updatedUser = {
       ...user,
       [name]: value,
@@ -26,6 +28,7 @@ const OrderContainer = () => {
   };
 
   const handleSetUser = () => {
+    //입력확인 함수
     const { name, phoneNum, address } = user;
     if (
       validateUserName(name) &&
@@ -43,7 +46,7 @@ const OrderContainer = () => {
   };
 
   const handleOpenPopup = () => {
-    //주문내역 창
+    //입력을 맞게 했다면-> 주문내역 창
     Swal.fire({ title: "주문내역 확인" });
   };
   const validateUserName = (name) => {
