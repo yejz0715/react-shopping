@@ -7,7 +7,7 @@ function AppRouter({ code, setCode }) {
     <Router>
       <Routes>
         {code.length !== 0 ? (
-          <div>
+          <>
             <Route
               path="/"
               element={<IntroContainer code={code} setCode={setCode} />}
@@ -15,7 +15,7 @@ function AppRouter({ code, setCode }) {
             <Route path="/list" element={<ListContainer code={code} />} />
             <Route path="/order" element={<OrderContainer code={code} />} />
             <Route path="/payment" element={<OrderContainer code={code} />} />
-          </div>
+          </>
         ) : (
           <Route
             path="/"
