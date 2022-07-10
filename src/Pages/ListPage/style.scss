@@ -3,9 +3,9 @@
   flex-direction: column;
 }
 #checkbox_list {
-  width: 1330px;
+  max-width: 1330px;
   display: grid;
-  grid-template-columns: repeat(6, 196px);
+  grid-template-columns: repeat(6, 1fr);
   gap: 32px;
   align-self: center;
   margin-bottom: 112px;
