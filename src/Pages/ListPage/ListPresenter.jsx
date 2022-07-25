@@ -10,6 +10,7 @@ const ListPresenter = ({
   checkList,
   setCheckList,
   handleCalcFruit,
+  shoppingList,
 }) => {
   return (
     <div id="list_container">
@@ -29,7 +30,11 @@ const ListPresenter = ({
         ))}
       </div>
       <Link to="/order">
-        <Button text="구매하기" handleOnClick={handleCalcFruit} />
+        <Button
+          text="구매하기"
+          handleOnClick={handleCalcFruit}
+          shoppingList={shoppingList}
+        />
       </Link>
     </div>
   );
